@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Barlow Semi Condensed Medium';
+    src: url('../fonts/BarlowSemiCondensed-Medium.ttf') format('truetype');
+    src: url('../fonts/BarlowSemiCondensed-Medium.woff') format('woff');
+    src: url('../fonts/BarlowSemiCondensed-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Semi Condensed Semi Bold';
+    src: url('../fonts/BarlowSemiCondensed-SemiBold.ttf') format('truetype');
+    src: url('../fonts/BarlowSemiCondensed-SemiBold.woff') format('woff');
+    src: url('../fonts/BarlowSemiCondensed-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed Medium', 'Gill Sans', 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    max-width: 69em;
+    margin-left: 290px;
+    margin-top: 175px;
+    /* height: 36em; */
+}
+
