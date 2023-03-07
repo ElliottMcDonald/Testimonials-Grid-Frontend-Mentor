@@ -27,15 +27,14 @@ body {
 }
 
 .container {
-    max-width: 1440px;
+    /* max-width: 1440px; */
     /* margin-left: 290px;
     margin-top: 175px;  */
     display: grid;
     gap: 28px;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: auto;
+    grid-template-rows: auto;
 }
-
 .item {
     border: 5px solid red;
 }
@@ -57,7 +56,29 @@ body {
 
 .item--purple {
     background-color: rgb(117,65,200);
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-position: 90% 10%;
+    background-repeat: no-repeat;
 }
+
+.item--grey {
+    background-color: rgb(72,85,106);
+}
+
+.item--black {
+    background-color: rgb(25,33,46);
+}
+
+.item--white--small, .item--white--large {
+    background-color: rgb(255, 255, 255);
+}
+
+.status {
+    font-family: 'Barlow Semi Condensed Medium';
+    font-size: 10px;
+}
+
+
 
 @media (max-width: 425px) {
     
