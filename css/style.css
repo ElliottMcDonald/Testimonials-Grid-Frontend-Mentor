@@ -26,6 +26,7 @@ body {
     font-family: 'Barlow Semi Condensed Medium', 'Gill Sans', 'Trebuchet MS', sans-serif;
 }
 
+/* Grid Container Styles */
 .container {
     /* max-width: 1440px; */
     /* margin-left: 290px;
@@ -35,8 +36,11 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
 }
+
+/* Grid Item Styles */
+
 .item {
-    border: 5px solid red;
+    border-radius: 3%;
 }
 
 .item:nth-of-type(1) {
@@ -54,28 +58,67 @@ body {
     grid-row: 1/3;
 }
 
-.item--purple {
+.item:first-of-type {
     background-color: rgb(117,65,200);
     background-image: url(../images/bg-pattern-quotation.svg);
     background-position: 90% 10%;
     background-repeat: no-repeat;
 }
 
-.item--grey {
+.item:nth-of-type(2) {
     background-color: rgb(72,85,106);
 }
 
-.item--black {
+.item:nth-of-type(4) {
     background-color: rgb(25,33,46);
 }
 
-.item--white--small, .item--white--large {
+.item--black--text {
     background-color: rgb(255, 255, 255);
 }
 
+/* Text Styles */
+
+.item--white--text {
+    color: rgb(255, 255, 255);
+}
+
+.item:nth-of-type(3) {
+    color: rgb(66, 66, 66);
+}
+
+.item:last-of-type {
+    color: rgb(19, 18, 18);
+}
+
+h2 {
+    font-family: 'Barlow Semi Condensed Semi Bold', Arial, Helvetica, sans-serif;  
+}
+
+.item--white--text h2 {
+    color: rgb(241, 241, 241);
+}
+
+.item:nth-of-type(3) h2 {
+    color: rgb(88, 88, 88);
+}
+
+.item:last-of-type h2 {
+    color: rgb(61, 61, 61);
+}
+
+.name {
+    font-family: 'Barlow Semi Condensed Semi Bold', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
 .status {
-    font-family: 'Barlow Semi Condensed Medium';
+    opacity: 0.5;
     font-size: 10px;
+}
+
+.quote {
+    opacity: 0.7;
 }
 
 
