@@ -19,28 +19,28 @@
 }
 
 body {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    font-size: 13px;
+    font-size: 0.8rem;
     font-family: 'Barlow Semi Condensed Medium', 'Gill Sans', 'Trebuchet MS', sans-serif;
 }
 
-/* Grid Container Styles */
+/**//**//**//**//**//**//**//**/
+ /** Grid Container Styles **/
+/**//**//**//**//**//**//**//**/
+
 .container {
-    /* max-width: 1440px; */
-    /* margin-left: 290px;
-    margin-top: 175px;  */
+    max-width: 1150px;
     display: grid;
-    gap: 28px;
+    gap: 2em;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
+    margin: auto;
 }
 
-/* Grid Item Styles */
+/**//**//**//**//**//**//**//**/
+ /**//* Grid Item Styles *//**/
+/**//**//**//**//**//**//**//**/
 
 .item {
-    border-radius: 3%;
+    border-radius: 1em;
 }
 
 .item:nth-of-type(1) {
@@ -77,7 +77,9 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-/* Text Styles */
+/**//**//**//**//**//**//**//**/
+   /**//* Text Styles *//**/
+/**//**//**//**//**//**//**//**/
 
 .item--white--text {
     color: rgb(255, 255, 255);
@@ -89,6 +91,11 @@ body {
 
 .item:last-of-type {
     color: rgb(19, 18, 18);
+}
+
+h1 {
+    font-family: 'Barlow Semi Condensed Semi Bold', Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
 }
 
 h2 {
@@ -107,23 +114,67 @@ h2 {
     color: rgb(61, 61, 61);
 }
 
-.name {
+.quote {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+/**//**//**//**//**//**//**//**/
+  /**//* Article Styles *//**/
+/**//**//**//**//**//**//**//**/
+
+header {
+    box-sizing: border-box;
+    display: flex;
+    height: 2.8em;
+    margin-top: 2.2em;
+    margin-left: 2.4em;
+}
+
+img {
+    height: 1.9em;
+    border-radius: 50%;
+}
+
+.photo-daniel {
+    border: 3px solid rgb(219, 87, 219);
+}
+
+.photo-patrick {
+    border: 3px solid rgb(137, 18, 173);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin: -1.1em 0 0 0.6em;
+}
+
+h1 {
     font-family: 'Barlow Semi Condensed Semi Bold', Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 0.75rem;
+    margin-bottom: -0.5em;
 }
 
 .status {
     opacity: 0.5;
-    font-size: 10px;
+    font-size: 0.6rem;
+}
+
+h2 {
+    margin: 1em 1.7em;
 }
 
 .quote {
-    opacity: 0.7;
+    margin: 0 2.6em 2.6em 2.6em;
 }
 
 
+/**//**//**//**//**//**//**//**/
+  /**//* Media Queries *//**/
+/**//**//**//**//**//**//**//**/
 
-@media (max-width: 425px) {
+@media (max-width: 750px) {
     
     .container {
         grid-template-columns: 1fr;
